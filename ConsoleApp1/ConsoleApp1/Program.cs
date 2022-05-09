@@ -14,15 +14,14 @@ namespace ConsoleApp1
 
             for (int i = 1; i < array.GetLength(0)+1; i++)
             {
-
                 for (int j = 1; j < array.Length; j++)
                 {
-                
                     if (array[j] < array[j - 1])
                     {
                         bufferNumber = array[j - 1];
                         array[j - 1] = array[j];
                         array[j] = bufferNumber;
+                        bufferNumber = 0;
                     }
                 }
             Console.WriteLine(i);
