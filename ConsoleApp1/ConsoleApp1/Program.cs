@@ -23,7 +23,6 @@ namespace ConsoleApp1
                         bufferNumber = array[j - 1];
                         array[j - 1] = array[j];
                         array[j] = bufferNumber;
-                        bufferNumber = 0;
                     }
                 }
             Console.WriteLine(i);
